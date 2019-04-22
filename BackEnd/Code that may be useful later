@@ -1,0 +1,9 @@
+create table Comments(
+	Person_name varchar(30) not null,
+    RID numeric unique not null,
+    Username varchar(15) unique not null,
+    C_Text varchar(400) not null,
+    foreign key(RID) references Restaurant(RID),
+    foreign key(Username) references Person(Username),
+    primary key(RID, Username)
+);
