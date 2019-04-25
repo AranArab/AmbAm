@@ -116,11 +116,16 @@
 
 					</div>
 
-					<div class="container-login100-form-btn m-t-17">
+					<ul class="actions">
+						<!-- <li><input @click="getData()" type="submit" value="Send Message" /></li> -->										
+						<li><button @click.prevent="submitData()">Add</button></li>
+					</ul>
+
+				<!---	<div class="container-login100-form-btn m-t-17">
 						<button class="login100-form-btn">
 							Sign Up Now
 						</button>
-					</div>
+					</div> -->
 
 				</form>
 			</div>
@@ -146,6 +151,7 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="assets/js/my.js"></script>
 
 </body>
 </html>
