@@ -21,7 +21,7 @@ new Vue({
             
             axios
                 .post('http://localhost:3606/api/signup', {Person_fname: this.Person_fname, Person_lname: this.Person_lname, phone_number: this.phone_number, Email: this.Email, 
-            Username: this.Username, P_word: this.P_word})
+            Username: this.Username, P_word: this.P_word, Diet: this.Diet})
                 .then(response => (
                     this.msg = response.data.status,
                     (this.msg == 'success') ? this.status = 'Added! Thanks.' : 'Ooops!'                                     
