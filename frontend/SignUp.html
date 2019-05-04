@@ -127,9 +127,8 @@
 
 					</div>
 				-->
-					<ul class="actions">
-						<li><input @click="submitData()" type="submit" value="Send Message" /></li>									
-						<li>Sign Up</button></li>
+					<ul class="actions">								
+						<button @click.prevent="submitData()" type="submit">Sign Up</button>
 					</ul>
 
 				<!---	<div class="container-login100-form-btn m-t-17">
@@ -137,7 +136,7 @@
 							Sign Up Now
 						</button>
 					</div> -->
-					<!-- <button @click="submitData()"> -->
+					<!--  -->
 				</form>
 			</div>
 		</div>
