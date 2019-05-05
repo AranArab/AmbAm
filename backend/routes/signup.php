@@ -33,7 +33,7 @@ $app->post('/api/signup', function ($request, $response, $args) { //POST example
                                 ->values(array($Person_fname, $Person_lname, $phone_number, $Email, $Username, $P_word, $Diet));
     $insert =  $insertStatement->execute();
 
-    $res['success'] = $insert; // id of the record
+    $res['insert'] = $insert; // id of the record
     $res['status'] = 'success';
     $response->write(json_encode($res));
     $pdo = null;
