@@ -25,8 +25,8 @@ new Vue({
                 .then(response => (
                     this.status = response.data.status,
                     (this.status == 'success') ? window.location = "signup.html" : this.msg = 'Added! Thanks.' : 'Ooops!'                                     
-                    )                    
-                )             
+                    )
+                )                                 
                 // .then(() => ((this.msg == 'success')?this.status = 'Submitted! Thanks.':''))
                 // .then(
                 //     (this.msg == 'success') ? this.status = 'Submitted! Thanks.' : '',
